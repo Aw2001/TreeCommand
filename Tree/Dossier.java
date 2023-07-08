@@ -30,7 +30,7 @@ class Dossier extends Composant {
 
     @Override
     public void affiche(String indent) {
-        System.out.println(indent + "|-- " + getNom());
+        System.out.println(indent + "\u2514\u2500 " + getNom());
         for (Composant composant : composants) {
             composant.affiche(indent + "    ");
         }
